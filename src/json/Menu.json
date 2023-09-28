@@ -1,0 +1,44 @@
+{
+  "Status": 1,
+  "ErrorMessage": "Success",
+  "Data": [
+    {
+      "IDNumber": 1.0,
+      "FunctionID": 1.0,
+      "FuncCode": "Purchase",
+      "FuncName": "Purchase",
+      "NavLink": "/user",
+      "SubMenu": [
+        {
+          "IDNumber": 1.0,
+          "FunctionID": 1.0,
+          "FuncCode": "Master",
+          "FuncName": "Master",
+          "NavLink": "/master",
+          "SubsubMenu": [
+            {
+              "IDNumber": 1.0,
+              "FunctionID": 1.0,
+              "FuncCode": "Purchase Rate",
+              "FuncName": "Rate",
+              "NavLink": "/rate"              
+            }]
+        },
+        {
+            "IDNumber": 1.0,
+            "FunctionID": 1.0,
+            "FuncCode": "Transaction",
+            "FuncName": "Transaction",
+            "NavLink": "/transaction" 
+        }
+      ]
+    },
+    {
+      "IDNumber": 2.0,
+      "FunctionID": 2.0,
+      "FuncCode": "Party",
+      "FuncName": "Party Master",
+      "NavLink": "/party"
+    }
+  ]
+}
