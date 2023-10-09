@@ -1,6 +1,8 @@
 import { menuItems } from '../../menuItems';
 import MenuItems from './MenuItems';
 import "../../App.css"
+// import { GET_MENU } from '../../store/utils/url';
+
 const Navbar = () => {
   return (
     <nav>

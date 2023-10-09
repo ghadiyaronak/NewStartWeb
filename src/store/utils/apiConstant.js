@@ -1,5 +1,9 @@
-export const GET = "GET";
-export const POST = "POST";
-export const PUT = "PUT";
-export const PATCH = "PATCH";
-export const DELETE = "DELETE";
+export const config = {
+    baseURL: "http://122.170.10.70:5000/api/",
+    method: {
+      POST: "post",
+      PUT: "put",
+      GET: "get",
+      DELETE: "delete",
+    },
+  };
