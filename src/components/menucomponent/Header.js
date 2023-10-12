@@ -18,32 +18,32 @@ const Header = () => {
   // const [userData, setUserData] = useState()
   const userData = useSelector((state) => state.signInSlice.user);
 
-  const getMenu = async () => {
-    const response = await Api(
-      config.method.POST,
-      APIEndPointList.getMenu,
-      {
-        LoginID: userData,
-      },
-      userData.accessToken
-    );
-    if (response.data) {
-      if (response.data.Status) {
-        setMenuList(response.data.Data);
-      } else {
-        toast.error(response.data.ErrorMessage);
-      }
-    } else {
-      toast.error(response.message);
-    }
-  };
+  // const getMenu = async () => {
+  //   const response = await Api(
+  //     config.method.POST,
+  //     APIEndPointList.getMenu,
+  //     {
+  //       LoginID: userData,
+  //     },
+  //     userData.accessToken
+  //   );
+  //   if (response.data) {
+  //     if (response.data.Status) {
+  //       setMenuList(response.data.Data);
+  //     } else {
+  //       toast.error(response.data.ErrorMessage);
+  //     }
+  //   } else {
+  //     toast.error(response.message);
+  //   }
+  // };
 
-  console.log(menuList);
-  console.log(userData);
+  // console.log(menuList);
+  // console.log(userData);
   
-  useEffect(() => {
-    getMenu();
-  }, []);
+  // useEffect(() => {
+  //   getMenu();
+  // }, []);
 
   return (
     <>
